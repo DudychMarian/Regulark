@@ -1,0 +1,40 @@
+.footer {
+  border-top: 1px solid #d4d7f4;
+  box-sizing: border-box;
+  padding: 40px 40px 0 40px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  font-size: 14px;
+
+  .copyright {
+    margin: 0;
+    color: #9f9f9f;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    li {
+      &:not(:last-child) {
+        padding-right: 16px;
+      }
+      a {
+        color: #9f9f9f;
+        text-decoration: none;
+        transition: all 0.2s;
+        &:hover {
+          cursor: pointer;
+          color: #4b3dd4;
+        }
+      }
+      span {
+        color: #9f9f9f;
+        text-decoration: none;
+      }
+    }
+  }
+}
