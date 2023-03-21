@@ -1,0 +1,83 @@
+.card {
+  background: #fff;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.04);
+  border-radius: 5px;
+  width: 31%;
+  margin-bottom: 3%;
+  transition: all 0.2s;
+  box-sizing: border-box;
+  &:hover {
+    box-shadow: 0 12px 18px 5px rgba(0, 0, 0, 0.045);
+    transform: translateY(-1px);
+  }
+}
+
+.head {
+  padding: 20px;
+  display: flex;
+  border-bottom: 2px solid #868DE5;
+}
+
+.content {
+  padding: 20px;
+}
+
+.description {
+  padding: 0 20px 20px 20px;
+  color: #9f9f9f;
+  text-align: center;
+
+  p {
+    margin: 0;
+  }
+}
+
+.wrapper {
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  border: 1px solid #d4d7f4;
+  border-radius: 50px;
+  height: 39px;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.placeholder {
+  @extend .input;
+  cursor: pointer;
+  background-color: #d4d7f450;
+  margin-bottom: 20px;
+}
+
+.image {
+  position: absolute;
+}
+
+.input_test {
+  @extend .input;
+  overflow: hidden;
+}
+
+@media (max-width: 1110px) {
+  .card {
+    width: 48%;
+    margin-bottom: 4%;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 730px) {
+  .card {
+    width: 100%;
+    margin-bottom: 6%;
+  }
+}
