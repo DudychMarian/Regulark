@@ -1,6 +1,8 @@
 # Regulark
 Regulark is a open-source project that provides a set of pre-built regular expressions for common use cases, such as validating emails, URLs, and phone numbers.
 
+<a href="https://www.producthunt.com/posts/regulark?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-regulark" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=385014&theme=light" alt="Regulark - Collection&#0032;of&#0032;regular&#0032;expressions | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+
 ## Usage
 To use Regulark, simply visit the website at [Under development] and select the regular expression that you would like to use. You can then enter your text into the input field to see if it matches the selected regular expression.
 
