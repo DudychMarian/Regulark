@@ -11,7 +11,7 @@ export function Footer() {
           </a>
         </li>
         <li>
-          <a href="https://github.com/DudychMarian/Regulark#contacts" target="_blank">
+          <a href="https://github.com/DudychMarian/Regulark#how-do-i-report-a-bug-or-suggest-an-idea" target="_blank">
             Contacts
           </a>
         </li>
