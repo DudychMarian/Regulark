@@ -1,4 +1,7 @@
 import { useState } from "react";
+
+// @ts-ignore
+import { Tooltip } from "./parts/Tooltip";
 import { checkRegExp } from "./logic/card-helper";
 
 import success from "../../assets/image/success.svg";
@@ -15,7 +18,8 @@ export interface CardProps {
 export const Card = (props: CardProps) => {
   const [value, setValue] = useState("");
 
-  const isCorret = checkRegExp(value, props.pattern)?.length > 0;
+  const matches = checkRegExp(value, props.pattern);
+  const isCorret = matches?.length > 0;
 
   const handleInputChange = (e: any) => {
     setValue(e.target.value);
@@ -23,7 +27,10 @@ export const Card = (props: CardProps) => {
 
   return (
     <div className={styles.card}>
-      <b className={styles.head}>{props.title.length > 25 ? props.title.substring(0, 25) + "..." : props.title}</b>
+      <div className={styles.head}>
+        <b>{props.title.length > 25 ? props.title.substring(0, 25) + "..." : props.title}</b>
+        <Tooltip description={props.description} />
+      </div>
       <div className={styles.content}>
         <input className={styles.placeholder} type="text" value={props.pattern} readOnly />
         <div className={styles.wrapper}>
@@ -44,9 +51,15 @@ export const Card = (props: CardProps) => {
             onChange={handleInputChange}
           />
         </div>
-      </div>
-      <div className={styles.description}>
-        <p>{props.description}</p>
+        {value && matches && (
+          <ul className={styles.matches}>
+            {matches
+              .sort((a, b) => a.length - b.length)
+              .map((match, index) => {
+                return <li key={match + '-' + index}>{match}</li>;
+              })}
+          </ul>
+        )}
       </div>
     </div>
   );
