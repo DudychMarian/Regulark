@@ -2,9 +2,9 @@
   "name": "Regulark",
   "short_name": "regulark",
   "description": "Regulark is a open-source project that provides a set of pre-built regular expressions for common use cases, such as validating emails, URLs, and phone numbers.",
-  "theme_color": "#fcfcfc",
-  "background_color": "#3367D6",
-  "start_url": "/",
+  "theme_color": "#3367D6",
+  "background_color": "#fcfcfc",
+  "start_url": "https://regulark.dudych.co.uk/",
   "display": "standalone",
   "icons": [
     {
