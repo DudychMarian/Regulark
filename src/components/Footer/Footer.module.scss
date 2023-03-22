@@ -1,7 +1,7 @@
 .footer {
   border-top: 1px solid #d4d7f4;
   box-sizing: border-box;
-  padding: 40px 40px 0 40px;
+  padding: 40px;
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
@@ -35,6 +35,17 @@
         color: #575757;
         text-decoration: none;
       }
+    }
+  }
+}
+
+@media (max-width: 730px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+
+    .copyright {
+      margin-bottom: 10px;
     }
   }
 }
