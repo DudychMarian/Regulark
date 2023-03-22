@@ -1,6 +1,6 @@
 {
   "name": "Regulark",
-  "short_name": "regulark",
+  "short_name": "Regulark",
   "description": "Regulark is a open-source project that provides a set of pre-built regular expressions for common use cases, such as validating emails, URLs, and phone numbers.",
   "theme_color": "#3367D6",
   "background_color": "#fcfcfc",
