@@ -32,7 +32,9 @@ export const Card = (props: CardProps) => {
         <Tooltip description={props.description} />
       </div>
       <div className={styles.content}>
-        <input className={styles.placeholder} type="text" value={props.pattern} readOnly />
+        <label>
+          <input className={styles.placeholder} type="text" value={props.pattern} readOnly />
+        </label>
         <div className={styles.wrapper}>
           {value.length !== 0 && (
             <>
@@ -56,7 +58,7 @@ export const Card = (props: CardProps) => {
             {matches
               .sort((a, b) => a.length - b.length)
               .map((match, index) => {
-                return <li key={match + '-' + index}>{match}</li>;
+                return <li key={match + "-" + index}>{match}</li>;
               })}
           </ul>
         )}
