@@ -11,11 +11,16 @@
   -webkit-text-size-adjust: 100%;
 }
 
-body {
-  margin: 40px;
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 .tippy-tooltip {
-  padding: 15px;
+  padding: 15px 15px;
   line-height: 22px;
 }
