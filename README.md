@@ -32,7 +32,9 @@ You can create an issue in the section
 - LinkedIn: [Marian Dudych](https://www.linkedin.com/in/marian-dudych-960a69206/)
 - E-Mail: [dudychmarian@proton.me](mailto:dudychmarian@proton.me)
 
-![regulark](https://user-images.githubusercontent.com/62218468/226220905-ce82c497-e685-46cf-b1ed-61c2d134657c.jpeg)
+![regulark_1](https://user-images.githubusercontent.com/62218468/227976709-91a8c04c-b57b-4a58-8032-b1ec2a304e9e.png)
+![regulark_2](https://user-images.githubusercontent.com/62218468/227976748-6e6afb69-9779-4479-a731-16e408434e6e.png)
+
 
 ## License
 
