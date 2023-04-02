@@ -16,6 +16,7 @@ function App() {
             key={obj.title}
             title={obj.title}
             description={obj.description}
+            tags={obj.tags}
             placeholder={obj.placeholder}
             pattern={obj.pattern}
           />
