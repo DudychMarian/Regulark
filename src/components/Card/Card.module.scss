@@ -92,6 +92,7 @@
     padding: 6px 10px;
     border-radius: 4px;
     animation: animate-placeholder 0.5s ease infinite;
+    transition: all .2s;
 
     &:not(:last-child) {
       margin-right: 5px;
@@ -99,6 +100,18 @@
 
     &:hover {
       background-color: #fbeeee;
+    }
+  }
+}
+
+.tags {
+  @extend .matches;
+
+  li {
+    background-color: rgba(212, 215, 244, 0.7);
+
+    &:hover {
+      background-color: darken($color: rgba(212, 215, 244, 0.7), $amount: 5);
     }
   }
 }
