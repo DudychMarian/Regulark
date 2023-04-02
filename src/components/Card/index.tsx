@@ -13,6 +13,7 @@ export interface CardProps {
   description: string;
   placeholder: string;
   pattern: string;
+  tags?: any;
 }
 
 export const Card = (props: CardProps) => {
@@ -24,6 +25,8 @@ export const Card = (props: CardProps) => {
   const handleInputChange = (e: any) => {
     setValue(e.target.value);
   };
+
+  const tagsArray = props.tags.split(",");
 
   return (
     <div className={styles.card}>
@@ -53,6 +56,13 @@ export const Card = (props: CardProps) => {
             onChange={handleInputChange}
           />
         </div>
+        {props.tags && (
+          <ul className={styles.tags}>
+            {tagsArray.slice(0, 3).map((value: string, index: number) => (
+              <li key={index}>{value}</li>
+            ))}
+          </ul>
+        )}
         {value && matches && (
           <ul className={styles.matches}>
             {matches
