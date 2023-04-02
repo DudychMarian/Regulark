@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 // @ts-ignore
 import { Tooltip } from "./parts/Tooltip";
@@ -59,7 +60,9 @@ export const Card = (props: CardProps) => {
         {props.tags && (
           <ul className={styles.tags}>
             {tagsArray.slice(0, 3).map((value: string, index: number) => (
-              <li key={index}>{value}</li>
+              <Link to={value.split(' ').join('-')} key={index}>
+                <li>{value}</li>
+              </Link>
             ))}
           </ul>
         )}
