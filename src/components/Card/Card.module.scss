@@ -107,6 +107,16 @@
 .tags {
   @extend .matches;
 
+  a {
+    display: inline-block;
+    flex: 1;
+    text-decoration: none;
+
+    &:not(:last-child) {
+      padding-right: 10px;
+    }
+  }
+
   li {
     background-color: rgba(212, 215, 244, 0.7);
 
