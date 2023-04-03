@@ -60,7 +60,7 @@ export const Card = (props: CardProps) => {
         {props.tags && (
           <ul className={styles.tags}>
             {tagsArray.slice(0, 3).map((value: string, index: number) => (
-              <Link to={value.split(' ').join('-')} key={index}>
+              <Link to={"?search=" + value.split(' ').join('-')} key={index}>
                 <li>{value}</li>
               </Link>
             ))}
