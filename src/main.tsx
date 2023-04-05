@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import "react-tippy/dist/tippy.css";
 
 import App from "./App";
 import "./index.scss";

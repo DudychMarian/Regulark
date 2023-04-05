@@ -1,5 +1,7 @@
-import { useState } from "react";
+import { useState, ChangeEvent } from "react";
 import { Link } from "react-router-dom";
+import { Tooltip as Tippy } from "react-tippy";
+
 
 // @ts-ignore
 import { Tooltip } from "./parts/Tooltip";
@@ -23,8 +25,13 @@ export const Card = (props: CardProps) => {
   const matches = checkRegExp(value, props.pattern);
   const isCorret = matches?.length > 0;
 
-  const handleInputChange = (e: any) => {
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     setValue(e.target.value);
+  };
+
+  const handleInputClick = (e: ChangeEvent<HTMLInputElement>) => {
+    navigator.clipboard.writeText(e.target.value);
+    e.target.select();
   };
 
   const tagsArray = props.tags.split(",");
@@ -37,7 +44,16 @@ export const Card = (props: CardProps) => {
       </div>
       <div className={styles.content}>
         <label>
-          <input className={styles.placeholder} type="text" value={props.pattern} readOnly />
+          {/* @ts-ignore */}
+          <Tippy title={"Copy to clipboard"} animation="shift" theme="light" arrow={true} followCursor={false}>
+            <input
+              className={styles.placeholder}
+              type="text"
+              value={props.pattern}
+              readOnly
+              onClick={(e: any) => handleInputClick(e)}
+            />
+          </Tippy>
         </label>
         <div className={styles.wrapper}>
           {value.length !== 0 && (
@@ -60,7 +76,7 @@ export const Card = (props: CardProps) => {
         {props.tags && (
           <ul className={styles.tags}>
             {tagsArray.slice(0, 3).map((value: string, index: number) => (
-              <Link to={"?search=" + value.split(' ').join('-')} key={index}>
+              <Link to={"?search=" + value.split(" ").join("-")} key={index}>
                 <li>{value}</li>
               </Link>
             ))}
