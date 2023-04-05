@@ -1,9 +1,9 @@
-import * as path from 'path';
+import * as path from "path";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
 
-import manifest from './manifest.json';
+import manifest from "./manifest.json";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -11,9 +11,7 @@ export default defineConfig({
     react(),
     VitePWA({
       manifest,
-      injectRegister: 'auto',
-      registerType: 'autoUpdate',
-      includeAssets: ["favicon.svg", "favicon.ico", "robots.txt", "apple-touch-icon.png"],
+      includeAssets: ["favicon.svg", "favicon.ico", "robots.txt", "apple-touch-icon.png, pwa-192x192.png, pwa-512x512.png"],
       // switch to "true" to enable sw on development
       devOptions: {
         enabled: false,
