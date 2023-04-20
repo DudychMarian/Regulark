@@ -61,5 +61,68 @@
     "pattern": "\\b(\\w)?(\\w)\\w?\\2\\1",
     "placeholder": "radar",
     "tags": "palindromes,other,strings"
+  },
+  {
+    "title": "Slug",
+    "description": "Matches slugs, which are URL-friendly versions of titles or names.",
+    "pattern": "/^[a-z0-9-]+$/",
+    "placeholder": "my-blog-post",
+    "tags": "slug,other,strings"
+  },
+  {
+    "title": "Hexadecimal Color Code",
+    "description": "Matches hexadecimal color codes with 3 or 6 digits preceded by a '#' symbol.",
+    "pattern": "/^#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/",
+    "placeholder": "#FF0000",
+    "tags": "hexadecimal,other,color"
+  },
+  {
+    "title": "Credit Card Number",
+    "description": "Matches credit card numbers with or without spaces or dashes.",
+    "pattern": "/^\\d{4}[ -]?\\d{4}[ -]?\\d{4}[ -]?\\d{4}$/",
+    "placeholder": "1234 5678 9012 3456",
+    "tags": "credit,debit,other,card,credit card,debit card,"
+  },
+  {
+    "title": "Social Security Number",
+    "description": "Matches Social Security numbers in the format of XXX-XX-XXXX.",
+    "pattern": "/^\\d{3}-\\d{2}-\\d{4}$/",
+    "placeholder": "123-45-6789",
+    "tags": "social security,tax,number,other,usa,us"
+  },
+  {
+    "title": "Time",
+    "description": "Matches times in the format of hh:mm:ss AM/PM.",
+    "pattern": "/^(0?[1-9]|1[012])(:[0-5]\\d){0,2}(\\s?[AP]M)$/i",
+    "placeholder": "08:30:00 AM",
+    "tags": "time,number,hour,other"
+  },
+  {
+    "title": "Password",
+    "description": "Matches passwords with at least 8 characters, one uppercase letter, one lowercase letter, one number, and one special character.",
+    "pattern": "/^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[^\\da-zA-Z]).{8,}$/",
+    "placeholder": "Pa$$w0rd123",
+    "tags": "password,number,string,other,letter,validation"
+  },
+  {
+    "title": "IPv4 Address",
+    "description": "Matches IPv4 addresses.",
+    "pattern": "/^(?:[0-9]{1,3}\\.){3}[0-9]{1,3}$/",
+    "placeholder": "127.0.0.1",
+    "tags": "ip,ipv4,string,other,ipv4 address,address,validation"
+  },
+  {
+    "title": "UK Phone Number",
+    "description": "Matches UK phone numbers, with or without the country code",
+    "pattern": "/^(?:(?:\\+44)|(?:0))(?:\\d{9}|\\d{10})$/",
+    "placeholder": "555-555-5555",
+    "tags": "phone,mobile,number,phone number,other,uk"
+  },
+  {
+    "title": "URL",
+    "description": "Matches HTTP and HTTPS URLs.",
+    "pattern": "/^https?://[^\\s/$.?#].[^\\s]$/",
+    "placeholder": "https://example.com",
+    "tags": "url,HTTP,HTTPS,URLs,string,other"
   }
 ]
