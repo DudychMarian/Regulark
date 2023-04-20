@@ -22,7 +22,7 @@ We welcome contributions from the community! If you would like to contribute to 
 
 All patterns are contained in the patterns.json file.
 
-**Important!** Before submitting your patterns, make sure to validate the JSON file at https://jsonlint.com/.
+**Important!** Before submitting your patterns, make sure to validate the JSON file at https://jsonformatter.curiousconcept.com/
 
 ## How do I report a bug or suggest an idea?
 
