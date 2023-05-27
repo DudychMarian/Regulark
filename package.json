@@ -1,27 +1,34 @@
 {
   "name": "regulark",
+  "author": "Marian Dudych",
+  "description": "Regulark is an open-source project that provides a set of pre-built regular expressions for common use cases, such as validating emails, URLs, and phone numbers.",
+  "version": "0.2.0",
+  "license": "MIT",
+  "homepage": "https://github.com/DudychMarian/Regulark",
   "private": true,
-  "version": "1.0.1",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^5.2.0",
+    "@types/node": "20.1.7",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
+    "eslint": "8.40.0",
+    "eslint-config-next": "13.4.2",
+    "iframe-resizer-react": "^1.1.0",
+    "next": "13.4.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "react-tippy": "^1.4.0",
-    "sass": "^1.59.3",
-    "vite-plugin-pwa": "^0.14.4"
+    "typescript": "5.0.4"
   },
   "devDependencies": {
-    "@types/react": "^18.0.28",
-    "@types/react-dom": "^18.0.11",
-    "@types/react-router-dom": "^5.3.3",
-    "@vitejs/plugin-react": "^3.1.0",
-    "typescript": "^4.9.3",
-    "vite": "^4.2.0"
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.23",
+    "sass": "^1.62.1",
+    "tailwindcss": "^3.3.2"
   }
 }

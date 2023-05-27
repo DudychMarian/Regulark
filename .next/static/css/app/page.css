@@ -1,0 +1,136 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[10].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[2].oneOf[10].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[2].oneOf[10].use[5]!./components/Card/Card.module.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Card_card__pfJM5 {
+  background: #fff;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.04);
+  border-radius: 5px;
+  width: 31%;
+  margin-bottom: 3%;
+  transition: all 0.2s;
+  box-sizing: border-box;
+}
+.Card_card__pfJM5:hover {
+  box-shadow: 0 12px 18px 5px rgba(0, 0, 0, 0.045);
+  transform: translateY(-1px);
+}
+
+.Card_head__Cbw3w {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #868de5;
+}
+.Card_head__Cbw3w b {
+  flex: 1 1;
+  font-weight: 600;
+}
+
+.Card_content__KQqLq {
+  padding: 20px;
+}
+
+.Card_wrapper__gwE2m {
+  position: relative;
+}
+
+.Card_info__zdarn {
+  opacity: 0.3;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.Card_info__zdarn:hover {
+  opacity: 0.8;
+}
+
+.Card_input__U5BWb, .Card_input_test__D3COo, .Card_placeholder__bC3nI {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  border: 1px solid #d4d7f4;
+  border-radius: 50px;
+  height: 39px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.Card_input__U5BWb:focus, .Card_input_test__D3COo:focus, .Card_placeholder__bC3nI:focus {
+  outline: none;
+}
+
+.Card_matches__PVtmA, .Card_tags__BK3YB {
+  margin-top: 5px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.Card_matches__PVtmA:empty, .Card_tags__BK3YB:empty {
+  display: none;
+}
+.Card_matches__PVtmA li, .Card_tags__BK3YB li {
+  flex: 1 1;
+  text-align: center;
+  list-style-type: none;
+  background-color: #fff4f4;
+  color: #2b2b2b;
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 6px 10px;
+  border-radius: 4px;
+  animation: Card_animate-placeholder__CbHQ9 0.5s ease infinite;
+  transition: all 0.2s;
+}
+.Card_matches__PVtmA li:not(:last-child), .Card_tags__BK3YB li:not(:last-child) {
+  margin-right: 5px;
+}
+.Card_matches__PVtmA li:hover, .Card_tags__BK3YB li:hover {
+  background-color: #fbeeee;
+}
+
+.Card_tags__BK3YB a {
+  display: inline-block;
+  flex: 1;
+  text-decoration: none;
+}
+.Card_tags__BK3YB a:not(:last-child) {
+  padding-right: 10px;
+}
+.Card_tags__BK3YB li {
+  background-color: rgba(212, 215, 244, 0.7);
+}
+.Card_tags__BK3YB li:hover {
+  background-color: rgba(192, 196, 239, 0.7);
+}
+
+.Card_placeholder__bC3nI {
+  cursor: pointer;
+  background-color: rgba(212, 215, 244, 0.3137254902);
+  margin-bottom: 20px;
+}
+
+.Card_image__sWcC9 {
+  position: absolute;
+}
+
+.Card_input_test__D3COo {
+  overflow: hidden;
+}
+
+@media (max-width: 1110px) {
+  .Card_card__pfJM5 {
+    width: 48%;
+    margin-bottom: 4%;
+    margin-right: 0;
+  }
+}
+@media (max-width: 730px) {
+  .Card_card__pfJM5 {
+    width: 100%;
+    margin-bottom: 6%;
+  }
+}
