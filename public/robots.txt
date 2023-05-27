@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://regulark.dudych.co.uk/
+
+# Sitemaps
+Sitemap: https://regulark.dudych.co.uk/sitemap.xml
