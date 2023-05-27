@@ -1,5 +1,7 @@
 "use client";
 
+import { Analytics } from "@vercel/analytics/react";
+
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { SearchProvider } from "@/context/search";
@@ -24,6 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main className="layout_container">
             <Header />
             {children}
+            <Analytics />
             <Footer />
           </main>
         </SearchProvider>
