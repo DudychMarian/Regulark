@@ -1,4 +1,10 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Regulark
+Regulark is a open-source project that provides a set of pre-built regular expressions for common use cases, such as validating emails, URLs, and phone numbers.
+
+<a href="https://www.producthunt.com/posts/regulark?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-regulark" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=385014&theme=light" alt="Regulark - Collection&#0032;of&#0032;regular&#0032;expressions | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+
+## Usage
+To use Regulark, simply visit the website at [Under development] and select the regular expression that you would like to use. You can then enter your text into the input field to see if it matches the selected regular expression.
 
 ## Getting Started
 
@@ -12,23 +18,36 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Contributing
+We welcome contributions from the community! If you would like to contribute to Regulark, please follow these steps:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* Create a **pull request** following the template below:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```json
+{
+  "title": "Regular expressions title",
+  "description": "Regex description",
+  "pattern": ".*?",
+  "placeholder": "placeholder",
+}
+```
 
-## Learn More
+All patterns are contained in the patterns.json file.
 
-To learn more about Next.js, take a look at the following resources:
+**Important!** Before submitting your patterns, make sure to validate the JSON file at https://jsonformatter.curiousconcept.com/
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## How do I report a bug or suggest an idea?
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+You can create an issue in the section
+<https://github.com/DudychMarian/Regulark/issues>. If you have any questions or suggestions, please contact me through GitHub or using the contact information below. (p.s.: Please note that the project is in beta stage).
 
-## Deploy on Vercel
+- LinkedIn: [Marian Dudych](https://www.linkedin.com/in/marian-dudych-960a69206/)
+- E-Mail: [dudychmarian@proton.me](mailto:dudychmarian@proton.me)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![regulark_1](https://user-images.githubusercontent.com/62218468/227976709-91a8c04c-b57b-4a58-8032-b1ec2a304e9e.png)
+![regulark_2](https://user-images.githubusercontent.com/62218468/227976748-6e6afb69-9779-4479-a731-16e408434e6e.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## License
+
+MIT License - Dudych Marian 2023
