@@ -1,4 +1,16 @@
 .header {
   margin-top: 2rem;
   margin-bottom: 2rem;
+
+  @media (max-width: 1024px) {
+    ul {
+      width: 100% !important;
+      margin-top: 10px;
+      li {
+        padding: 10px;
+      }
+    }
+  }
+
+
 }

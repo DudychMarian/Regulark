@@ -1,6 +1,6 @@
 [
   {
-    "id": "1",
+    "id": "positive-number",
     "title": "Positive number",
     "description": "Match integers or floats that are positive",
     "pattern": "^\\d+$",
@@ -9,7 +9,7 @@
     "fullDescription": "This regular expression is used to match a string that consists of one or more digits. The entire string must consist only of digits for a match to occur."
   },
   {
-    "id": "2",
+    "id": "negative-number",
     "title": "Negative number",
     "description": "Match integers or floats that are negative",
     "pattern": "^-\\d*\\.?\\d+$",
@@ -18,7 +18,7 @@
     "fullDescription": "This regular expression is used to match a negative number in decimal format. The negative sign (-) is mandatory, followed by an optional integer part (\\d*) and an optional fractional part (.? followed by \\d+). The entire string must consist only of the negative number for a match to occur."
   },
   {
-    "id": "3",
+    "id": "e-mail-format",
     "title": "E-Mail format",
     "description": "Checking email for correctness.",
     "pattern": "/^([A-Z|a-z|0-9](\\.|_){0,1})+[A-Z|a-z|0-9]\\@([A-Z|a-z|0-9])+((\\.){0,1}[A-Z|a-z|0-9]){2}\\.[a-z]{2,3}$/gm",
@@ -27,7 +27,7 @@
     "fullDescription": "This regular expression is used to match an email address. It follows the general structure of an email address, starting with alphanumeric characters or digits, followed by an '@' symbol, a domain name consisting of alphanumeric characters or digits, and finally a top-level domain (TLD) of two or three lowercase letters. The regular expression also allows for optional periods and underscores within the username and domain name."
   },
   {
-    "id": "4",
+    "id": "youtube-url",
     "title": "Youtube URL",
     "description": "Match the URL of a YouTube",
     "pattern": "/(?:https?://)?(?:(?:(?:www\\.?)?youtube\\.com(?:/(?:(?:watch\\?.*?(v=[^&\\s]+).*)|(?:v(/.*))|(channel/.+)|(?:user/(.+))|(?:results\\?(search_query=.+))))?)|(?:youtu\\.be(/.*)?))/g",
@@ -36,7 +36,7 @@
     "fullDescription": "This regular expression is designed to match and extract YouTube video URLs in various formats and paths. It accounts for different URL variations such as 'youtube.com', 'www.youtube.com', 'youtu.be', and handles different URL paths such as video watch queries, video path, channel path, user path, and search query path."
   },
   {
-    "id": "5",
+    "id": "uk-postal-code",
     "title": "UK Postal Code",
     "description": "Matches UK Postal Code",
     "pattern": "^([A-Za-z][A-Ha-hJ-Yj-y]?[0-9][A-Za-z0-9]? ?[0-9][A-Za-z]{2}|[Gg][Ii][Rr] ?0[Aa]{2})$",
@@ -45,7 +45,7 @@
     "fullDescription": "This regular expression is designed to match specific postal code formats. It allows for a variety of formats, including alphanumeric characters, optional second letters, and optional spaces. It covers most postal codes in the United Kingdom, excluding some special cases like the Channel Islands and British Overseas Territories. It also includes a specific format for postal codes in Gibraltar."
   },
   {
-    "id": "6",
+    "id": "us-canadian-zip-postal-code",
     "title": "U.S./Canadian ZIP/Postal Code",
     "description": "Matches US ZIP, ZIP+4, and Canadian Postal Codes",
     "pattern": "(^\\d{5}(-\\d{4})?$)|(^[A-Z]{1}\\d{1}[A-Z]{1} *\\d{1}[A-Z]{1}\\d{1}$)",
@@ -54,7 +54,7 @@
     "fullDescription": "This regular expression is designed to match either a ZIP code format in the United States or a specific license plate format. It allows for variations in the number of digits and letters, while adhering to the defined patterns for ZIP codes and license plates."
   },
   {
-    "id": "7",
+    "id": "html-tags",
     "title": "HTML tags",
     "description": "Match content between opening and closing HTML tags",
     "pattern": "/(<script(\\s|\\S)*?</script>)|(<style(\\s|\\S)*?</style>)|(<!--(\\s|\\S)*?-->)|(</?(\\s|\\S)*?>)/g",
@@ -63,7 +63,7 @@
     "fullDescription": "This regular expression is designed to match HTML script tags, style tags, HTML comments, and HTML tags (both opening and closing). It allows for variations in the content within these tags and matches them in a non-greedy manner. The regular expression is useful for identifying and potentially manipulating or removing these HTML elements from a string."
   },
   {
-    "id": "8",
+    "id": "hashtags",
     "title": "Hashtags",
     "description": "Matches hashtags",
     "pattern": "/\\B#([a-z0-9]{2,})(?![~!@#$%^&*()=+_`\\-\\|/'\\[\\]\\{\\}]|[?.,]*\\w)/ig",
@@ -72,7 +72,7 @@
     "fullDescription": "This regular expression is designed to match hashtags in a string. It captures hashtags that consist of two or more consecutive lowercase letters or digits preceded by a non-word boundary. The regular expression also ensures that the matched hashtags are not followed by specific sets of special characters, question marks, periods, commas, or word characters. It allows for case-insensitive matching and finds all occurrences of hashtags within the string."
   },
   {
-    "id": "9",
+    "id": "two-five-letters-palindromes",
     "title": "2-5 letters palindromes",
     "description": "Palindromes of 2-5 letters. Example: noon / wow",
     "pattern": "\\b(\\w)?(\\w)\\w?\\2\\1",
@@ -81,7 +81,7 @@
     "fullDescription": "The regular expression captures the first and second characters as separate groups, allowing them to be referenced later. By using backreferences, it ensures that the same characters captured in the first and second groups are matched again at the end of the word. This regular expression is useful for finding words that exhibit a specific pattern of character repetition at the beginning and end. For example, it would match words like 'pop', 'level', 'refer', 'noon', and 'stats', but it would not match words like 'apple', 'banana', or 'hello'."
   },
   {
-    "id": "10",
+    "id": "slug",
     "title": "Slug",
     "description": "Matches slugs, which are URL-friendly versions of titles or names.",
     "pattern": "/^[a-z0-9-]+$/",
@@ -90,7 +90,7 @@
     "fullDescription": "this regular expression is designed to match strings that consist only of lowercase letters, digits, and hyphens. It allows for any number of characters, as long as they conform to the specified character set. The regular expression does not allow for uppercase letters, spaces, or any other special characters. This regular expression can be useful for validating or filtering input that needs to adhere to a specific format, such as usernames, URL slugs, or identifiers where only lowercase letters, digits, and hyphens are allowed."
   },
   {
-    "id": "11",
+    "id": "hexadecimal-color-code",
     "title": "Hexadecimal Color Code",
     "description": "Matches hexadecimal color codes with 3 or 6 digits preceded by a '#' symbol.",
     "pattern": "/^#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/",
@@ -99,7 +99,7 @@
     "fullDescription": "Overall, this regular expression is designed to match strings that represent valid hexadecimal color codes in the form of either six or three characters preceded by a '#'. Hexadecimal color codes are commonly used to define colors in web development and design. The regular expression allows for both uppercase and lowercase letters in the range of a-f and A-F, as well as digits from 0 to 9. By using this regular expression, you can validate if a string represents a valid hexadecimal color code format. It ensures that the color code is either six or three characters long (excluding the '#') and consists only of valid hexadecimal characters."
   },
   {
-    "id": "12",
+    "id": "credit-card-number",
     "title": "Credit Card Number",
     "description": "Matches credit card numbers with or without spaces or dashes.",
     "pattern": "/^\\d{4}[ -]?\\d{4}[ -]?\\d{4}[ -]?\\d{4}$/",
@@ -108,7 +108,7 @@
     "fullDescription": "This regular expression is designed to match strings that represent a specific format for a 16-digit number, typically used to represent credit card numbers or other identification numbers. The pattern allows for flexibility in the formatting by allowing optional spaces or hyphens to separate the groups of digits. By using this regular expression, you can validate if a string represents a valid 16-digit number with a specific format. It ensures that the number is correctly formatted with groups of four digits separated by optional spaces or hyphens."
   },
   {
-    "id": "13",
+    "id": "social-security-number",
     "title": "Social Security Number",
     "description": "Matches Social Security numbers in the format of XXX-XX-XXXX.",
     "pattern": "/^\\d{3}-\\d{2}-\\d{4}$/",
@@ -117,7 +117,7 @@
     "fullDescription": "This regular expression is designed to match strings that represent a specific format for a social security number (SSN) in the format of '###-##-####'. The pattern enforces the requirement of three digits, followed by a hyphen, then two digits, another hyphen, and finally four digits. By using this regular expression, you can validate if a string represents a valid social security number with the specific format of '###-##-####'. It ensures that the number is correctly formatted and consists of the correct number of digits and hyphens in the expected positions."
   },
   {
-    "id": "14",
+    "id": "time",
     "title": "Time",
     "description": "Matches times in the format of hh:mm:ss AM/PM.",
     "pattern": "/^(0?[1-9]|1[012])(:[0-5]\\d){0,2}(\\s?[AP]M)$/i",
@@ -126,7 +126,7 @@
     "fullDescription": "This regular expression is designed to match strings that represent time in a 12-hour format, optionally including minutes and seconds. It enforces the following pattern: 'HH:MM:SS AM/PM' or 'H:MM:SS AM/PM', where the hours range from 1 to 12, minutes and seconds range from 00 to 59, and AM/PM is case-insensitive. By using this regular expression, you can validate if a string represents a valid time in a 12-hour format with optional minutes and seconds. It ensures that the time is correctly formatted and adheres to the expected range of hours, minutes, and seconds."
   },
   {
-    "id": "15",
+    "id": "password",
     "title": "Password",
     "description": "Matches passwords with at least 8 characters, one uppercase letter, one lowercase letter, one number, and one special character.",
     "pattern": "/^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[^\\da-zA-Z]).{8,}$/",
@@ -135,7 +135,7 @@
     "fullDescription": "This regular expression is designed to enforce strong password requirements. By using this regular expression, you can validate if a string meets the specified criteria for a strong password. It ensures that the password contains a combination of lowercase and uppercase letters, digits, and special characters, and is of sufficient length to provide a higher level of security."
   },
   {
-    "id": "16",
+    "id": "ipv4-address",
     "title": "IPv4 Address",
     "description": "Matches IPv4 addresses.",
     "pattern": "/^(?:[0-9]{1,3}\\.){3}[0-9]{1,3}$/",
@@ -144,7 +144,7 @@
     "fullDescription": "This regular expression is designed to match strings that represent an IPv4 address. IPv4 addresses are typically written as four sets of numbers separated by periods, such as '192.168.0.1'. Each set can range from 0 to 255, with a maximum of three digits. By using this regular expression, you can validate if a string represents a valid IPv4 address. It ensures that the address consists of four sets of numbers, each ranging from 0 to 255, separated by periods. This regular expression can be useful for validating user input or extracting IPv4 addresses from larger text blocks."
   },
   {
-    "id": "17",
+    "id": "uk-phone-number",
     "title": "UK Phone Number",
     "description": "Matches UK phone numbers, with or without the country code",
     "pattern": "/^(?:(?:\\+44)|(?:0))(?:\\d{9}|\\d{10})$/",
@@ -153,7 +153,7 @@
     "fullDescription": "this regular expression is designed to match strings that represent phone numbers in the United Kingdom (UK). By using this regular expression, you can validate if a string represents a valid UK phone number. It ensures that the phone number starts with either the country code '+44' or a leading '0', followed by either 9 or 10 digits. This regular expression can be useful for validating phone numbers entered by users or for extracting UK phone numbers from larger text blocks."
   },
   {
-    "id": "18",
+    "id": "url",
     "title": "URL",
     "description": "Matches HTTP and HTTPS URLs.",
     "pattern": "/^https?://[^\\s/$.?#].[^\\s]$/",
