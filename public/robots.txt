@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://regulark.dudych.co.uk/
+Host: https://regulark.dudych.im/
 
 # Sitemaps
-Sitemap: https://regulark.dudych.co.uk/sitemap.xml
+Sitemap: https://regulark.dudych.im/sitemap.xml
